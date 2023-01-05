@@ -1,0 +1,86 @@
+<a class="menu" onclick="abrir()">
+    <img src="../public/menu.png" width="30px" alt="">
+</a>
+
+<ul class="menu-list" id="menu-list">
+    <li id="nav"> 
+       <a class="menu-link" href="#">Home</a>
+    </li>
+    <li id="nav"> 
+        <span class="icon-plus"></span>
+        <a class="menu-link" href="#">About</a>
+     </li>
+     <li id="nav"> 
+        <a class="menu-link" href="#">Services</a>
+     </li>
+     <li id="nav"> 
+        <a class="menu-link" href="#">Portfolio</a>
+     </li>
+     <li id="nav"> 
+        <a class="menu-link" href="#">Contact</a>
+     </li>
+</ul>
+<script>
+function abrir(){
+    document.getElementById('menu-list').style.display = "block";
+}
+</script>
+<style>
+
+.menu
+{
+    margin: 1.5em;;
+    position:fixed;
+    text-align:center;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #1E2D40;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+    border: 1px solid white;
+    z-index: 5;
+}
+
+.menu:hover
+{
+    background-color:white;
+}
+
+ul 
+{ 
+    list-style: none;
+    width:30%;
+    min-width: 250px; 
+    background-color:white;
+    margin:6em 0 0 0;
+    padding:0px;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Lato', sans-serif;
+    display:none;
+}
+
+#nav
+{
+    color:white;
+    padding: 15px;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+}
+
+a 
+{ 
+    text-decoration: none; 
+    color: black;
+}
+
+.menu-list
+{
+    position:fixed;
+    z-index: 10;
+}
+
+
+</style>

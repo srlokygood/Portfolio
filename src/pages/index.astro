@@ -1,0 +1,342 @@
+---
+import Portafolio from "../layouts/portafolio.astro";
+---
+
+<Portafolio>
+	<div>
+		<img src="../public/background-home.jpg" width="100%" alt="">
+		<div class="home wrapper">
+			<div class="main_portafolio_info" >
+				<div class="img-profile-container">
+					<img class="img-profile-home" src="../public/perfil.jpg" alt="">
+				</div>
+			</div>
+			<div class="main_portafolio_info">
+				<div class="text-home">
+					<h2>Hi I'm</h2>
+					<h1>Jair Alejandro Forero Rodriguez</h1>
+					<h4>Development FullsTack - Mechatronic Engenieer</h4>
+				</div>
+				<div class="bloque_info"></div>
+			</div>
+		</div>
+	</div>
+	<div class="informacion">
+		<div class="about_me">
+			<h1>About Me</h1>
+			<div class="text_info_about_me">
+				<label >
+					I Am <strong>Jair Forero </strong> a developer with excellent skill with programming, from web sites to video games and micro controllers,
+					too very smart always have ideas to improve process and solve needs, good skills of comunication to work in team,
+					I am search for a full time position where i can learn new things ,improve my abilities and acquire new knowledge. 
+				</label>
+			</div>
+			<div>
+				<a class="button_cv" href="https://docs.google.com/document/d/1CfjyjLC4-mmqkbpQ2jtZ0Cp5kIl0Rkk0/edit?usp=sharing&ouid=115393887903584245646&rtpof=true&sd=true" target="_blank">
+					Open CV
+					<img class="img_download_button" src="../public/foreign.png" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="skills">
+			<h1>
+				My skills
+			</h1>
+			<div class="wrapper2">
+				<div class="target">
+					<h2>FrameWorks</h2>
+					<img src="../public/Angular.png" alt="">
+					<ul>
+						<li>
+							Angular
+						</li>
+						<li>
+							Ionic
+						</li>
+						<li>
+							Astro
+						</li>
+					</ul>
+				</div>
+				<div class="target">
+					<h2>BackEnd</h2>
+					<img src="../public/go.png" alt="">
+					<ul>
+						<li>
+							Golang
+						</li>
+						<li>
+							PHP
+						</li>
+					</ul>
+				</div>
+				<div class="target">
+					<h2>FrontEnd</h2>
+					<img src="../public/html.png" alt="">
+					<ul>
+						<li>
+							HTML
+						</li>
+						<li>
+							CSS
+						</li>
+						<li>
+							JavaScript
+						</li>
+					</ul>
+				</div>
+				<div class="target">
+					<h2>Version Controller</h2>
+					<img src="../public/github.png" alt="">
+					<ul>
+						<li>
+							Github
+						</li>
+						<li>
+							Git
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="portfolio">
+				<h1>My Portfolio</h1>
+				<div class="wrapper3">
+					<div class="proyect">
+						<div class="target_portfolio">
+							<h2>
+								CRM Para centros comerciales
+							</h2>
+							<img src="" alt="">
+							<div>
+								<label for="">
+									Part of the team in the development of the new portal Unilago.com ecommerce style with internal administration from the CRM where the registration of clients is consolidated through the page and the management of different processes such as PQRS, publication of products, visits among others
+								</label>
+							</div>
+							<a href="https://unilago.com/crm/" target="_blank">Open link</a>
+							<a href="">Github</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</Portafolio>
+
+<style>
+
+	.target_portfolio
+	{
+		padding:10px 30px;
+		height: 370px;
+		background-color:white;
+		color:#1E2D40;
+		border-radius: 30px;
+	}
+
+	.portfolio
+	{
+		margin-top: 80px;
+	}
+
+	.target>ul>li
+	{
+		height:40px;
+		font-size: 25px;
+		font-weight: bold;
+	}
+
+	.target>ul
+	{
+		padding:0px;
+		text-align:left;
+		margin:30px 5px;
+	}
+
+	.target>img
+	{
+		width:150px;
+	}
+
+	.target
+	{
+		padding:10px 30px;
+		height: 370px;
+		background-color:white;
+		color:#1E2D40;
+		border-radius: 30px;
+	}
+
+	.skills
+	{
+		margin-top: 100px;
+	}
+
+	.img_download_button
+	{
+		width:20px;
+		vertical-align: middle;
+		margin:0 10px;
+	}
+
+	.button_cv
+	{
+		width:250px;
+		font-size: 20px;
+		padding:10px;
+		background-color:skyblue;
+		color:black;
+		cursor:pointer;
+		text-decoration: none; 
+	}
+
+	.text_info_about_me
+	{
+		text-align: justify;
+		line-height : 50px;
+		width:50%;
+		margin:auto;
+		margin-bottom: 40px;
+	}
+
+	.informacion
+	{
+		background-color: #1E2D40;
+		margin-top:-10px;
+		text-align:center;
+		padding:30px;
+		color:white;
+		font-family: 'Kanit', sans-serif;
+	}
+
+	.home 
+	{
+		position: absolute;
+		top:0px;
+		width:100%;
+		display: flex;
+		text-align: center;
+		padding:15% 0px;
+	}
+
+
+	.main_portafolio_info
+	{
+		width:50%;
+	}
+
+	.text-home 
+	{
+		background-color:'black';
+		padding:0px 5%;
+		text-align: right;
+		position:absolute;
+		width:40%;
+		z-index: 1;
+	}
+
+	.bloque_info
+	{
+		background-color: #1E2D40;
+		margin:10px;
+		height:200px;
+		opacity: 0.8;
+		padding:5px;
+	}
+
+	.text-home>h1
+	{
+		font-family: 'Kanit', sans-serif;
+		color:white;
+	}
+	.text-home>h3
+	{
+		font-family: 'Kanit', sans-serif;
+		color:white;
+	}
+	.text-home>h2
+	{
+		font-family: 'Kanit', sans-serif;
+		color:white;
+	}
+
+	.text-home>h4
+	{
+		font-family: 'Kanit', sans-serif;
+		color:white;
+	}
+
+	.img-profile-home
+	{
+		width: 100%;
+		width:150px;
+		border-radius: 100px;
+	}
+
+	.wrapper
+	{
+		display:flex;
+	}
+
+	.wrapper2
+	{
+		display: grid;
+		grid-template-columns: repeat(4, 24%);
+		grid-gap: 10px;
+		grid-auto-rows: minmax(100px, auto);
+	}
+
+	.wrapper3
+	{
+		display: grid;
+		grid-template-columns: repeat(4, 24%);
+		grid-gap: 10px;
+		grid-auto-rows: minmax(100px, auto);
+	}
+
+	@media only screen and (max-width: 1088px) {
+		.wrapper2
+		{
+			grid-template-columns: repeat(2, 50%);
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.main_portafolio_info
+		{
+			width:100%;
+		}
+
+		.text-home 
+		{
+			padding:0px;
+			text-align: center;
+			width:100%;
+		}
+
+		.wrapper
+		{
+			display:block;
+		}
+
+		.bloque_info
+		{
+			margin:10px;
+			height:150px;
+			opacity: 100;
+			padding:10px;
+		}
+
+		.main_info_home
+		{
+			width:100%;
+		}
+		.about_me
+		{
+			margin-top:80%;
+		}
+		.wrapper2
+		{
+			grid-template-columns: repeat(1, 100%);
+		}
+	}
+</style>
